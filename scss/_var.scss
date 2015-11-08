@@ -1,0 +1,77 @@
+
+
+@font-face {
+    font-family: "georgia";
+    src: url("../font/georgia.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "georgia-italic";
+    src: url("../font/georgia-italic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "georgia-bold";
+    src: url("../font/georgia-bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "georgia-bold-italic";
+    src: url("../font/georgia-bold-italic.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+*{
+    box-sizing: border-box; 
+     transition: .25s;
+  }
+
+
+$fz: 1 ;
+$lh: 1.2 ;
+$color-text: #414040;
+$fzHTML : 19;
+$fz1: 40 / $fzHTML * 1rem;
+$fz2: 28 / $fzHTML * 1rem;
+$fzD: 16 / $fzHTML * 1rem;
+
+html{
+  font-size: $fzHTML + 1px;
+  vertical-align: middle;
+  font-family: 'tahoma', 'Georgia';
+  color: #414040;
+  @media  (max-width : 480px) {
+    font-size: 16px;
+  }
+
+}
+
+
+body{
+
+   @include font-size(1);
+  //font-size: 1rem;
+   //@include rem(line-height, $lh);
+  line-height:1.5;
+}
+
+.container{
+  // @include rem(max-width, 65);
+  max-width: 1200px;
+  // @include font-size(1.5);
+  margin: 0 auto;
+  @include rem(padding, 0, .3);
+  @include cf;
+}
+
+
+
+
+
+
+
